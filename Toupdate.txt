@@ -1,2 +1,0 @@
-menu button click function in mobile view
-menu scroll function in mobile view
