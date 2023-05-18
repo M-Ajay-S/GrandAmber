@@ -40,10 +40,11 @@ const Wrapper = styled.section`
     }
     @media (max-width:${({ theme }) => theme.media.tab}){
         .top-btn{
-            left:40%;
-            right: 0;
+            left:85%;
+            bottom: 3%;
         }
    }
+ 
 `
 
 const GoToTop = () => {

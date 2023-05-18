@@ -41,7 +41,7 @@ const Nav1 = styled.nav`
 @media (max-width:${({ theme }) => theme.media.mobile}) {
   .mobile-navbar-btn{
     display: inline-block;
-    z-index: 2;
+    z-index: 3;
     border:${({ theme }) => theme.colors.black};
     .mobile-nav-icon{
       font-size: 4.2rem;
@@ -118,16 +118,16 @@ const Nav = () => {
       <div className={isMenu ? "menuIcon active" : "menuIcon"}>
         <ul className="navbar-list">
           <li>
-            <NavLink className="navbar-link" to="/" >Home </NavLink>
+            <NavLink className="navbar-link" to="/" onClick={() => { setIsMenu(false) }} >Home </NavLink>
           </li>
           <li>
-            <NavLink className="navbar-link" to="/about" > About </NavLink>
+            <NavLink className="navbar-link" to="/about" onClick={() => { setIsMenu(false) }} > About </NavLink>
           </li>
           <li>
-            <NavLink className="navbar-link" to="/service" >Services </NavLink>
+            <NavLink className="navbar-link" to="/service" onClick={() => { setIsMenu(false) }} >Services </NavLink>
           </li>
           <li>
-            <NavLink className="navbar-link" to="/contact" >Contact</NavLink>
+            <NavLink className="navbar-link" to="/contact" onClick={() => { setIsMenu(false) }} >Contact</NavLink>
           </li>
         </ul>
         <div className="mobile-navbar-btn">

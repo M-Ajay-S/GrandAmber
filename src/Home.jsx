@@ -22,7 +22,6 @@ const Home = () => {
         <>
             <HeroSection />
             <Services />
-
             <Contact />
 
         </>
